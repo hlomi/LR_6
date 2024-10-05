@@ -1,0 +1,7 @@
+def maximum_5():
+    A = list(map(int,input('Enter a list: ').split()))
+    print("Original list: ", A)
+    top_5 = sorted(A, reverse=True)[:5]
+    print ("Maximalni elementy: ", top_5)
+    return top_5
+maximum_5()
