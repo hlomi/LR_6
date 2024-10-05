@@ -1,0 +1,11 @@
+def delete():
+    A = list(map(int,input('Enter a list: ').split()))
+    print(A)
+    k = [1, len(A) - 2]
+    result = []
+    for x in range(len(A)):
+        if x not in k:
+            result.append(A[x])
+    print(result)
+    return result
+delete()
