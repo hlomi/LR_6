@@ -1,0 +1,16 @@
+from collections import Counter
+
+def search():
+    A = input("Enter a text: ")
+    B = A.lower()
+    print("Text: ", B)
+    letter_counts = Counter(B)
+    more_than_once = {letter for letter, count in letter_counts.items() if count >= 2}
+    only_once = {letter for letter, count in letter_counts.items() if count == 1}
+
+    print ("Letters that appear at least twice: ", more_than_once)
+    print ("Letters that appear only once", only_once)
+
+    return
+
+search()
